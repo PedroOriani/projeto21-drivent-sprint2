@@ -1,6 +1,6 @@
-import { createTicket } from "@/repositories/tickets-repository";
-import Joi from "joi";
+import Joi from 'joi';
+import { createTicket } from '@/repositories/tickets-repository';
 
 export const ticketSchema = Joi.object<createTicket>({
-    ticketTypeId: Joi.number().required()
-})
+  ticketTypeId: Joi.number().required(),
+});

@@ -3,8 +3,8 @@ import { notFoundError } from '@/errors';
 import { ticketsRepository } from '@/repositories/tickets-repository';
 
 async function getTypes() {
-  const result = await ticketsRepository.getTypes();
-  return result;
+  const tickets = await ticketsRepository.getTypes();
+  return tickets;
 }
 
 async function getTicket(userId: number) {
